@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit</title>
+
+  <!-- daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    .lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
+  <!-- colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <header class="container mx-auto lato">
+
+    <nav class="flex justify-between lg:bg-[#F85559] rounded-[600px] my-14 items-center px-14 py-4">
+      <div class="hidden sm:hidden md:hidden lg:block">
+
+        <ul class="flex gap-8 text-white text-lg font-medium">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Shop</li>
+          <li>All Fruits</li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-1">
+        <img src="images/logo.png" alt="">
+        <h3 class="text-[#121212] lg:text-white text-[40px] font-bold">Fruit Burst</h3>
+      </div>
+
+
+      <div>
+        <div class="relative w-72 hidden lg:block">
+          <div class="absolute inset-y-0 end-8 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+
+          </div>
+          <input type="text" id="search-navbar" class="block w-full p-2 ps-8 py-4 text-sm rounded-[600px]"
+            placeholder="Search here">
+        </div>
+      </div>
+
+      <div class="dropdown lg:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-20">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Shop</li>
+          <li>All Fruits</li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+  </header>
+
+  <main>
+
+
+
+  </main>
+  <footer></footer>
+
+
+</body>
+
+</html>
